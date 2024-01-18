@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TelerikSegementbackgroundColor.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="http://schemas.telerik.com/2022/xaml/maui">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <controls:RadSegmentedControl x:Name="segmentControlText"
+                HeightRequest="60"
+                SelectedSegmentBackgroundColor="Red"
+                SelectedSegmentTextColor="Green"
+                VerticalOptions="Start">
+                <controls:RadSegmentedControl.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Popular</x:String>
+                        <x:String>Library</x:String>
+                    </x:Array>
+                </controls:RadSegmentedControl.ItemsSource>
+            </controls:RadSegmentedControl>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
